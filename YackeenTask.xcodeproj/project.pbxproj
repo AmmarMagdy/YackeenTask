@@ -122,12 +122,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		A0A9461127776BEC003792D6 /* Utilis */ = {
+		A0A9461127776BEC003792D6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				A0A9461227776C26003792D6 /* FloatRatingView.swift */,
 			);
-			path = Utilis;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A0B709B127773D63006B119B = {
@@ -153,7 +153,7 @@
 			children = (
 				A0A945BD277740B1003792D6 /* Modules */,
 				A0B709BD27773D63006B119B /* AppDelegate.swift */,
-				A0A9461127776BEC003792D6 /* Utilis */,
+				A0A9461127776BEC003792D6 /* Utilities */,
 				A0A9460927776563003792D6 /* Helpers */,
 				A0B709C627773D65006B119B /* Assets.xcassets */,
 				A0B709C827773D65006B119B /* LaunchScreen.storyboard */,
