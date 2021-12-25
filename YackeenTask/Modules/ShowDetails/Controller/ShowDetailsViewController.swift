@@ -29,18 +29,19 @@ class ShowDetailsViewController: UIViewController {
     @IBOutlet private weak var rateView: FloatRatingView!
     @IBOutlet weak var summaryLabel: UILabel!
     
+    var presenter: ShowDetailsPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationController?.isNavigationBarHidden = false
+        presenter?.loadViewData()
     }
-
-
 }
 
 extension ShowDetailsViewController: ShowDetailsViewProtocol {
     func setName(_ name: String?) {
         nameLabel.text = name
+        navigationItem.title = name
     }
     
     func setImage(_ image: String?) {

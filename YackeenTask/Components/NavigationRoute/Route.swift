@@ -12,7 +12,7 @@ protocol Route {
     var style: NaivgationStyle { get }
 }
 
-protocol NavigationRoute {
+protocol NavigationRoute: AnyObject {
     func navigate(to route: Route)
     func dismiss(navigateTo route: Route?)
     func popVC()

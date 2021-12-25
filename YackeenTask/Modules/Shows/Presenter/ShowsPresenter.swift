@@ -10,6 +10,7 @@ import Foundation
 protocol ShowsPresenterProtocol: AnyObject {
     func configure(cell: ShowsCollectionCell, at row: Int)
     var numberOfShows: Int {get}
+    func openShowDetails(at row: Int)
     func getShows()
 }
 
@@ -39,6 +40,11 @@ extension ShowsPresenter: ShowsPresenterProtocol {
         cell.setRuntime(show.runtime)
         cell.setPremiered(show.premiered)
         cell.setShowRate(show.rating?.average)
+    }
+    
+    func openShowDetails(at row: Int) {
+        guard shows.count > row else {return }
+        view?.navigate(to: ShowsRoutes.openShowDetails(show: shows[row]))
     }
 }
 

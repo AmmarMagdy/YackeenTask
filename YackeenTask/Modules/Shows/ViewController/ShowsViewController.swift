@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ShowsViewProtocol: AnyObject {
+protocol ShowsViewProtocol: NavigationRoute {
     func reloadData()
 }
 
@@ -21,6 +21,12 @@ class ShowsViewController: UIViewController {
         super.viewDidLoad()
         setupRegisterCollectionView()
         presenter?.getShows()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        navigationItem.title = nil
     }
     
     func setupRegisterCollectionView() {
@@ -65,7 +71,7 @@ extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        presenter?.openAdDetails(indexPath.row)
+                presenter?.openShowDetails(at: indexPath.row)
     }
 }
 

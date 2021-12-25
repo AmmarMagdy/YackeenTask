@@ -19,8 +19,6 @@
 		A0A9461A27776F86003792D6 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9461927776F86003792D6 /* Route.swift */; };
 		A0A9461D27777061003792D6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9461C27777061003792D6 /* UIViewController+Extension.swift */; };
 		A0A9462527777541003792D6 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9461F27777541003792D6 /* CustomView.swift */; };
-		A0A9462627777541003792D6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462027777541003792D6 /* CustomButton.swift */; };
-		A0A9462727777541003792D6 /* ShadowViewimg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462127777541003792D6 /* ShadowViewimg.swift */; };
 		A0A9462D27777BDA003792D6 /* ShowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462C27777BDA003792D6 /* ShowsPresenter.swift */; };
 		A0A9463027777C1F003792D6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462F27777C1F003792D6 /* Request.swift */; };
 		A0A9463227778220003792D6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463127778220003792D6 /* Router.swift */; };
@@ -29,6 +27,7 @@
 		A0A9463B27779E80003792D6 /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463927779E80003792D6 /* ShowDetailsViewController.swift */; };
 		A0A9463C27779E80003792D6 /* ShowDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A9463A27779E80003792D6 /* ShowDetailsViewController.xib */; };
 		A0A946402777A0C3003792D6 /* ShowDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463F2777A0C3003792D6 /* ShowDetailsPresenter.swift */; };
+		A0A946422777A3EA003792D6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A946412777A3EA003792D6 /* String+Extension.swift */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -49,8 +48,6 @@
 		A0A9461927776F86003792D6 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		A0A9461C27777061003792D6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A0A9461F27777541003792D6 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		A0A9462027777541003792D6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		A0A9462127777541003792D6 /* ShadowViewimg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewimg.swift; sourceTree = "<group>"; };
 		A0A9462C27777BDA003792D6 /* ShowsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsPresenter.swift; sourceTree = "<group>"; };
 		A0A9462F27777C1F003792D6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A0A9463127778220003792D6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -59,6 +56,7 @@
 		A0A9463927779E80003792D6 /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
 		A0A9463A27779E80003792D6 /* ShowDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailsViewController.xib; sourceTree = "<group>"; };
 		A0A9463F2777A0C3003792D6 /* ShowDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsPresenter.swift; sourceTree = "<group>"; };
+		A0A946412777A3EA003792D6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +192,7 @@
 				A0A9461C27777061003792D6 /* UIViewController+Extension.swift */,
 				A0A9460A27776576003792D6 /* UIView+Extension.swift */,
 				A0A94633277788E2003792D6 /* UIImage+Extension.swift */,
+				A0A946412777A3EA003792D6 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				A0A9461F27777541003792D6 /* CustomView.swift */,
-				A0A9462027777541003792D6 /* CustomButton.swift */,
-				A0A9462127777541003792D6 /* ShadowViewimg.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -400,13 +397,12 @@
 				A0A9461627776EEE003792D6 /* ShowsRoutes.swift in Sources */,
 				A0A9460F2777660D003792D6 /* ShowsCollectionCell.swift in Sources */,
 				A0A9462527777541003792D6 /* CustomView.swift in Sources */,
+				A0A946422777A3EA003792D6 /* String+Extension.swift in Sources */,
 				A0A9463027777C1F003792D6 /* Request.swift in Sources */,
 				A0A9462D27777BDA003792D6 /* ShowsPresenter.swift in Sources */,
 				A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */,
 				A0A9463727778CA4003792D6 /* ShowsAPI.swift in Sources */,
-				A0A9462627777541003792D6 /* CustomButton.swift in Sources */,
 				A0A94634277788E2003792D6 /* UIImage+Extension.swift in Sources */,
-				A0A9462727777541003792D6 /* ShadowViewimg.swift in Sources */,
 				A0A9461A27776F86003792D6 /* Route.swift in Sources */,
 				A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */,
 				A0A9463B27779E80003792D6 /* ShowDetailsViewController.swift in Sources */,

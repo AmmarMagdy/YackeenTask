@@ -9,9 +9,7 @@ import UIKit
 
 
 class LaunchScreenViewController: UIViewController {
-        
-    @IBOutlet weak var imageView: UIImageView!
-    
+            
     var timer: Timer?
 
     override func viewDidLoad() {

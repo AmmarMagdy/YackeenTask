@@ -8,22 +8,29 @@
 import Foundation
 
 protocol ShowDetailsPresenterProtocol: AnyObject {
-    func getShows()
+    func loadViewData()
 }
 
 class ShowDetailsPresenter {
     
-    weak var view: ShowsViewProtocol?
-    private let request = Request()
-    private var shows = [Show]()
+    weak var view: ShowDetailsViewProtocol?
+    private var show: Show
     
-    init(view: ShowsViewProtocol) {
+    init(view: ShowDetailsViewProtocol, show: Show) {
         self.view = view
+        self.show = show
     }
-    
 }
 
-extension ShowDetailsPresenter: ShowsPresenterProtocol {
- 
+extension ShowDetailsPresenter: ShowDetailsPresenterProtocol {
+    func loadViewData() {
+        view?.setName(show.name)
+        view?.setLink(show.links?.selfLink?.href)
+        view?.setImage(show.image?.original)
+        view?.setRuntime(show.runtime)
+        view?.setPremiered(show.premiered)
+        view?.setShowRate(show.rating?.average)
+        view?.setSummary(show.summary?.htmlToString)
+    }
 }
 
