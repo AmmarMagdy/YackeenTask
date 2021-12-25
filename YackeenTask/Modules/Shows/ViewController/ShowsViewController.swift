@@ -13,12 +13,52 @@ class ShowsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupRegisterCollectionView()
     }
     
     func setupRegisterCollectionView() {
-//        collectionView.register(HeaderInformatiomAd.nib, forHeaderFooterViewReuseIdentifier: HeaderInformatiomAd.identifier)
+        collectionView.register(ShowsCollectionCell.nib, forCellWithReuseIdentifier: ShowsCollectionCell.identifier)
     }
 
+}
+
+extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+        //presenter?.numberOfAdvertisment ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width  = collectionView.bounds.width * 0.93
+        let height = view.bounds.height * 0.5
+        return CGSize(width: width , height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ShowsCollectionCell.identifier, for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let _ = cell as! ShowsCollectionCell
+//        presenter?.configure(cell: cell, at: indexPath.row)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        presenter?.openAdDetails(indexPath.row)
+    }
 }
