@@ -1,5 +1,5 @@
 //
-//  ShowsURL.swift
+//  Router.swift
 //  YackeenTask
 //
 //  Created by Ammar.M on 25/12/2021.
@@ -17,12 +17,12 @@ enum Router {
     
     case showsList(_ queryParam: String)
     
-    var BASE_URL: String {
+    static var BASE_URL: String {
         return "http://api.tvmaze.com/"
     }
     
     var url: String {
-        return BASE_URL + "search/shows"
+        return Router.BASE_URL + "search/shows"
     }
     
     

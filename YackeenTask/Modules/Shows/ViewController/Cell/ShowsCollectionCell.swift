@@ -24,12 +24,26 @@ class ShowsCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setName(_ name: String) {
+    func setName(_ name: String?) {
         nameLabel.text = name
     }
     
-    func setImage(_ image: String) {
-        showImageView.im
+    func setImage(_ image: String?) {
+        UIImage.loadFrom(url: image, completion: { image in
+            self.showImageView.image = image
+        })
+    }
+    
+    func setLink(_ link: String?) {
+        linkLabel.text = link
+    }
+    
+    func setPremiered(_ premiered: String?) {
+        premieredLabel.text = premiered
+    }
+    
+    func setRuntime(_ runtime: String?) {
+        runtimeLabel.text = runtime
     }
 
 }

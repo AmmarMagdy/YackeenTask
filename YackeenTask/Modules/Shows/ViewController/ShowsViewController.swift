@@ -7,21 +7,28 @@
 
 import UIKit
 
+protocol ShowsViewProtocol: AnyObject {
+
+}
+
 class ShowsViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    var presenter: ShowsPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRegisterCollectionView()
-//        let request = Request()
-//        request.requestAPI(router: .showsList("search")) { resultArray in
-//            print(resultArray)
-//        } callbackFail: { statusCode, message in
-//            print(statusCode, message)
-//        } callbackEndDueToError: { error in
-//            print(error)
-//        }
+        let request = Request()
+        request.requestAPI(router: .showsList("search")) { resultArray in
+            let shows = ShowsAPI(from: resultArray).shows
+    
+        } callbackFail: { statusCode, message in
+            print(statusCode, message)
+        } callbackEndDueToError: { error in
+            print(error)
+        }
 
     }
     
@@ -70,4 +77,9 @@ extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        presenter?.openAdDetails(indexPath.row)
     }
+}
+
+extension ShowsViewController: ShowsViewProtocol {
+    
+   
 }

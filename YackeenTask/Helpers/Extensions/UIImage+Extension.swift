@@ -8,9 +8,16 @@
 import UIKit
 
 extension UIImage {
-    public static func loadFrom(url: URL, completion: @escaping (_ image: UIImage?) -> ()) {
+    static func loadFrom(url: String?, completion: @escaping (_ image: UIImage?) -> ()) {
+        guard let url = url else {return}
+        var main: URL!
+        if url.contains("http") {
+            main = URL(string: url)
+        } else {
+            main = URL(string: Router.BASE_URL + (url))
+        }
         DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: url) {
+            if let data = try? Data(contentsOf: main) {
                 DispatchQueue.main.async {
                     completion(UIImage(data: data))
                 }
