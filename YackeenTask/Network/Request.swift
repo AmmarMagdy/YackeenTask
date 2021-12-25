@@ -9,9 +9,9 @@ import Foundation
 
 class Request {
     
-    func requestAPI(url: URL, callbackSuccess: @escaping (([[String:Any]])->()), callbackFail: @escaping((Int?, String?)->()), callbackEndDueToError: @escaping((String)->())) {
+    func requestAPI(router: Router, callbackSuccess: @escaping (([[String:Any]])->()), callbackFail: @escaping((Int?, String?)->()), callbackEndDueToError: @escaping((String)->())) {
         
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+        let dataTask = URLSession.shared.dataTask(with: router.asURLRequest()) { (data, urlResponse, error) in
             if let error = error {
                 callbackEndDueToError(error.localizedDescription)
             }
