@@ -16,5 +16,9 @@ class ShowsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func setupRegisterCollectionView() {
+//        collectionView.register(HeaderInformatiomAd.nib, forHeaderFooterViewReuseIdentifier: HeaderInformatiomAd.identifier)
+    }
 
 }

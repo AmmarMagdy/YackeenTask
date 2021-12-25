@@ -12,6 +12,8 @@
 		A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A946042777623A003792D6 /* ShowsViewController.swift */; };
 		A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A946052777623A003792D6 /* ShowsViewController.xib */; };
 		A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9460A27776576003792D6 /* UIView+Extension.swift */; };
+		A0A9460F2777660D003792D6 /* ShowsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9460D2777660D003792D6 /* ShowsCollectionCell.swift */; };
+		A0A946102777660D003792D6 /* ShowsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A9460E2777660D003792D6 /* ShowsCollectionCell.xib */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -25,6 +27,8 @@
 		A0A946042777623A003792D6 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		A0A946052777623A003792D6 /* ShowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsViewController.xib; sourceTree = "<group>"; };
 		A0A9460A27776576003792D6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A0A9460D2777660D003792D6 /* ShowsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCollectionCell.swift; sourceTree = "<group>"; };
+		A0A9460E2777660D003792D6 /* ShowsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsCollectionCell.xib; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			children = (
 				A0A946042777623A003792D6 /* ShowsViewController.swift */,
 				A0A946052777623A003792D6 /* ShowsViewController.xib */,
+				A0A9460C277765F4003792D6 /* Cell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -104,6 +109,15 @@
 				A0A9460A27776576003792D6 /* UIView+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A0A9460C277765F4003792D6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9460D2777660D003792D6 /* ShowsCollectionCell.swift */,
+				A0A9460E2777660D003792D6 /* ShowsCollectionCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A0B709B127773D63006B119B = {
@@ -200,6 +214,7 @@
 				A0B709C727773D65006B119B /* Assets.xcassets in Resources */,
 				A0A945C1277740DB003792D6 /* LaunchScreenViewController.xib in Resources */,
 				A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */,
+				A0A946102777660D003792D6 /* ShowsCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */,
+				A0A9460F2777660D003792D6 /* ShowsCollectionCell.swift in Sources */,
 				A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */,
 				A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */,
 				A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */,
