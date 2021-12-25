@@ -243,6 +243,17 @@
             <point key="canvasLocation" x="139" y="98"/>
         </view>
     </objects>
+    <designables>
+        <designable name="DB6-74-R57">
+            <size key="intrinsicContentSize" width="11" height="20.5"/>
+        </designable>
+        <designable name="JNH-z3-lDS">
+            <size key="intrinsicContentSize" width="50.5" height="20.5"/>
+        </designable>
+        <designable name="fbw-E5-mGC">
+            <size key="intrinsicContentSize" width="10" height="20.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Notification" width="18" height="22"/>
         <image name="message" width="21" height="22"/>

@@ -346,6 +346,12 @@
             <point key="canvasLocation" x="342.75362318840581" y="204.24107142857142"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="acb-vM-Voo"/>
+        <designable name="blB-hB-Plz"/>
+        <designable name="nZV-hb-nc8"/>
+        <designable name="ymr-ws-foH"/>
+    </designables>
     <resources>
         <image name="star" width="10" height="10"/>
         <image name="star (1)" width="10" height="10"/>
