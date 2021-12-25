@@ -9,19 +9,18 @@ import UIKit
 
 class ShowsCollectionCell: UICollectionViewCell {
 
-    @IBOutlet weak var showImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var linkLabel: UILabel!
-    @IBOutlet weak var premieredStringLabel: UILabel!
-    @IBOutlet weak var premieredLabel: UILabel!
-    @IBOutlet weak var runtimeStringLabel: UILabel!
-    @IBOutlet weak var runtimeLabel: UILabel!
-    @IBOutlet weak var rateStringLabel: UILabel!
-    @IBOutlet weak var rateView: FloatRatingView!
+    @IBOutlet private weak var showImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var linkButton: UIButton!
+    @IBOutlet private weak var premieredStringLabel: UILabel!
+    @IBOutlet private weak var premieredLabel: UILabel!
+    @IBOutlet private weak var runtimeStringLabel: UILabel!
+    @IBOutlet private weak var runtimeLabel: UILabel!
+    @IBOutlet private weak var rateView: FloatRatingView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     func setName(_ name: String?) {
@@ -35,15 +34,19 @@ class ShowsCollectionCell: UICollectionViewCell {
     }
     
     func setLink(_ link: String?) {
-        linkLabel.text = link
+        linkButton.setTitle(link, for: .normal)
     }
     
     func setPremiered(_ premiered: String?) {
         premieredLabel.text = premiered
     }
     
-    func setRuntime(_ runtime: String?) {
-        runtimeLabel.text = runtime
+    func setRuntime(_ runtime: Int?) {
+        guard let runtime = runtime else { return }
+        runtimeLabel.text = "\(runtime)"
     }
 
+    func setShowRate(_ rate: Double?) {
+        rateView.rating = rate ?? 0
+    }
 }

@@ -14,8 +14,9 @@ enum ShowsRoutes: Route {
     var destination: UIViewController {
         switch self {
         case .openShows:
-            return ShowsViewController()
-
+            let showData = ShowsViewController()
+            showData.presenter = ShowsPresenter(view: showData)
+            return showData
         }
     }
 

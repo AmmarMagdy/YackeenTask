@@ -8,34 +8,25 @@
 import UIKit
 
 protocol ShowsViewProtocol: AnyObject {
-
+    func reloadData()
 }
 
 class ShowsViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
     var presenter: ShowsPresenterProtocol?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRegisterCollectionView()
-        let request = Request()
-        request.requestAPI(router: .showsList("search")) { resultArray in
-            let shows = ShowsAPI(from: resultArray).shows
-    
-        } callbackFail: { statusCode, message in
-            print(statusCode, message)
-        } callbackEndDueToError: { error in
-            print(error)
-        }
-
+        presenter?.getShows()
     }
     
     func setupRegisterCollectionView() {
         collectionView.register(ShowsCollectionCell.nib, forCellWithReuseIdentifier: ShowsCollectionCell.identifier)
     }
-
+    
 }
 
 extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
@@ -45,8 +36,7 @@ extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-        //presenter?.numberOfAdvertisment ?? 0
+        return presenter?.numberOfShows ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -59,8 +49,8 @@ extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width  = collectionView.bounds.width * 0.93
-        let height = view.bounds.height * 0.5
+        let width  = collectionView.bounds.width * 0.9
+        let height = view.bounds.height * 0.45
         return CGSize(width: width , height: height)
     }
     
@@ -70,16 +60,18 @@ extension ShowsViewController: UICollectionViewDelegate,UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let _ = cell as! ShowsCollectionCell
-//        presenter?.configure(cell: cell, at: indexPath.row)
+        let cell = cell as! ShowsCollectionCell
+        presenter?.configure(cell: cell, at: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        presenter?.openAdDetails(indexPath.row)
+        //        presenter?.openAdDetails(indexPath.row)
     }
 }
 
 extension ShowsViewController: ShowsViewProtocol {
     
-   
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }

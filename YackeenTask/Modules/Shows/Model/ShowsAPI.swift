@@ -13,8 +13,11 @@ struct ShowsAPI {
     
     init(from resultArray: [[String: Any]]) {
         for dic in resultArray{
-            let value = Show(fromDictionary: dic)
-            shows.append(value)
+            if let showDictionary = dic["show"] as? [String: Any] {
+                let value = Show(fromDictionary: showDictionary)
+                shows.append(value)
+                
+            }
         }
     }
 }
@@ -23,25 +26,25 @@ struct ShowsAPI {
 
 struct Show {
 
-    var links : Link!
-    var averageRuntime : Int!
-    var ended : String!
-//    var externals : External!
-    var genres : [String]!
-    var id : Int!
-    var image : Image!
-    var language : String!
-    var name : String!
-    var officialSite : String!
-    var premiered : String!
-    var rating : Rating!
-    var runtime : Int!
-    var status : String!
-    var summary : String!
-    var type : String!
-    var updated : Int!
-    var url : String!
-    var weight : Int!
+    var links : Link?
+    var averageRuntime : Int?
+    var ended : String?
+//    var externals : External?
+    var genres : [String]?
+    var id : Int?
+    var image : Image?
+    var language : String?
+    var name : String?
+    var officialSite : String?
+    var premiered : String?
+    var rating : Rating?
+    var runtime : Int?
+    var status : String?
+    var summary : String?
+    var type : String?
+    var updated : Int?
+    var url : String?
+    var weight : Int?
 
 
     /**
@@ -82,85 +85,12 @@ struct Show {
 //            }
         weight = dictionary["weight"] as? Int
     }
-
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if links != nil{
-            dictionary["_links"] = links.toDictionary()
-        }
-        if averageRuntime != nil{
-            dictionary["averageRuntime"] = averageRuntime
-        }
-        if ended != nil{
-            dictionary["ended"] = ended
-        }
-//        if externals != nil{
-//            dictionary["externals"] = externals.toDictionary()
-//        }
-        if genres != nil{
-            dictionary["genres"] = genres
-        }
-        if id != nil{
-            dictionary["id"] = id
-        }
-        if image != nil{
-            dictionary["image"] = image.toDictionary()
-        }
-        if language != nil{
-            dictionary["language"] = language
-        }
-        if name != nil{
-            dictionary["name"] = name
-        }
-        if officialSite != nil{
-            dictionary["officialSite"] = officialSite
-        }
-        if premiered != nil{
-            dictionary["premiered"] = premiered
-        }
-        if rating != nil{
-            dictionary["rating"] = rating.toDictionary()
-        }
-        if runtime != nil{
-            dictionary["runtime"] = runtime
-        }
-//        if schedule != nil{
-//            dictionary["schedule"] = schedule.toDictionary()
-//        }
-        if status != nil{
-            dictionary["status"] = status
-        }
-        if summary != nil{
-            dictionary["summary"] = summary
-        }
-        if type != nil{
-            dictionary["type"] = type
-        }
-        if updated != nil{
-            dictionary["updated"] = updated
-        }
-        if url != nil{
-            dictionary["url"] = url
-        }
-//        if webChannel != nil{
-//            dictionary["webChannel"] = webChannel.toDictionary()
-//        }
-        if weight != nil{
-            dictionary["weight"] = weight
-        }
-        return dictionary
-    }
-
 }
 
 struct Link{
 
-    var previousepisode : Previousepisode!
-    var selfLink : Previousepisode!
+    var previousepisode : Previousepisode?
+    var selfLink : Previousepisode?
 
 
     /**
@@ -175,26 +105,11 @@ struct Link{
             }
     }
 
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if previousepisode != nil{
-            dictionary["previousepisode"] = previousepisode.toDictionary()
-        }
-        if selfLink != nil{
-            dictionary["self"] = self.toDictionary()
-        }
-        return dictionary
-    }
-
 }
 
 struct Previousepisode{
 
-    var href : String!
+    var href : String?
 
 
     /**
@@ -204,24 +119,13 @@ struct Previousepisode{
         href = dictionary["href"] as? String
     }
 
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if href != nil{
-            dictionary["href"] = href
-        }
-        return dictionary
-    }
-
+    
 }
 
 struct Image{
 
-    var medium : String!
-    var original : String!
+    var medium : String?
+    var original : String?
 
 
     /**
@@ -231,46 +135,18 @@ struct Image{
         medium = dictionary["medium"] as? String
         original = dictionary["original"] as? String
     }
-
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if medium != nil{
-            dictionary["medium"] = medium
-        }
-        if original != nil{
-            dictionary["original"] = original
-        }
-        return dictionary
-    }
-
 }
 
 struct Rating{
 
-    var average : Int!
+    var average : Double?
 
 
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
     init(fromDictionary dictionary: [String:Any]){
-        average = dictionary["average"] as? Int
-    }
-
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if average != nil{
-            dictionary["average"] = average
-        }
-        return dictionary
+        average = dictionary["average"] as? Double
     }
 
 }
