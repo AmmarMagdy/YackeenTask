@@ -14,6 +14,15 @@ class ShowsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRegisterCollectionView()
+//        let request = Request()
+//        request.requestAPI(router: .showsList("search")) { resultArray in
+//            print(resultArray)
+//        } callbackFail: { statusCode, message in
+//            print(statusCode, message)
+//        } callbackEndDueToError: { error in
+//            print(error)
+//        }
+
     }
     
     func setupRegisterCollectionView() {

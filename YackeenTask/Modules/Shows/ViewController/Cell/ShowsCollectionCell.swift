@@ -23,5 +23,13 @@ class ShowsCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setName(_ name: String) {
+        nameLabel.text = name
+    }
+    
+    func setImage(_ image: String) {
+        showImageView.im
+    }
 
 }
