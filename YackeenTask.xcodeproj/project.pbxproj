@@ -22,6 +22,7 @@
 		A0A9462627777541003792D6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462027777541003792D6 /* CustomButton.swift */; };
 		A0A9462727777541003792D6 /* ShadowViewimg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462127777541003792D6 /* ShadowViewimg.swift */; };
 		A0A9462A27777541003792D6 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462427777541003792D6 /* CustomLabel.swift */; };
+		A0A9462D27777BDA003792D6 /* ShowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9462C27777BDA003792D6 /* ShowsPresenter.swift */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 		A0A9462027777541003792D6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A0A9462127777541003792D6 /* ShadowViewimg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewimg.swift; sourceTree = "<group>"; };
 		A0A9462427777541003792D6 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		A0A9462C27777BDA003792D6 /* ShowsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsPresenter.swift; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A0A9461427776EC9003792D6 /* ShowsRoutes */,
+				A0A9462B27777BBE003792D6 /* Presenter */,
 				A0A9460827776429003792D6 /* ViewController */,
 			);
 			path = Shows;
@@ -189,6 +192,14 @@
 				A0A9462427777541003792D6 /* CustomLabel.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A0A9462B27777BBE003792D6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9462C27777BDA003792D6 /* ShowsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A0B709B127773D63006B119B = {
@@ -329,6 +340,7 @@
 				A0A9461627776EEE003792D6 /* ShowsRoutes.swift in Sources */,
 				A0A9460F2777660D003792D6 /* ShowsCollectionCell.swift in Sources */,
 				A0A9462527777541003792D6 /* CustomView.swift in Sources */,
+				A0A9462D27777BDA003792D6 /* ShowsPresenter.swift in Sources */,
 				A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */,
 				A0A9462627777541003792D6 /* CustomButton.swift in Sources */,
 				A0A9462727777541003792D6 /* ShadowViewimg.swift in Sources */,
