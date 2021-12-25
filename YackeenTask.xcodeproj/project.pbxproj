@@ -115,7 +115,8 @@
 		A0A9460927776563003792D6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A0A9460A27776576003792D6 /* UIView+Extension.swift */,
+				A0A9461B2777704A003792D6 /* Extensions */,
+				A0A9461127776BEC003792D6 /* Utilities */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -132,7 +133,6 @@
 		A0A9461127776BEC003792D6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A0A9461B2777704A003792D6 /* Extensions */,
 				A0A9461227776C26003792D6 /* FloatRatingView.swift */,
 			);
 			path = Utilities;
@@ -166,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A0A9461C27777061003792D6 /* UIViewController+Extension.swift */,
+				A0A9460A27776576003792D6 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,7 +195,6 @@
 				A0A945BD277740B1003792D6 /* Modules */,
 				A0B709BD27773D63006B119B /* AppDelegate.swift */,
 				A0A9461727776F86003792D6 /* Components */,
-				A0A9461127776BEC003792D6 /* Utilities */,
 				A0A9460927776563003792D6 /* Helpers */,
 				A0B709C627773D65006B119B /* Assets.xcassets */,
 				A0B709C827773D65006B119B /* LaunchScreen.storyboard */,
