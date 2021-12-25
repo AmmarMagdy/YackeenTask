@@ -11,6 +11,7 @@
 		A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A945C0277740DB003792D6 /* LaunchScreenViewController.swift */; };
 		A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A946042777623A003792D6 /* ShowsViewController.swift */; };
 		A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A946052777623A003792D6 /* ShowsViewController.xib */; };
+		A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9460A27776576003792D6 /* UIView+Extension.swift */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 		A0A945C0277740DB003792D6 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		A0A946042777623A003792D6 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		A0A946052777623A003792D6 /* ShowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsViewController.xib; sourceTree = "<group>"; };
+		A0A9460A27776576003792D6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,10 +84,26 @@
 		A0A9460327776214003792D6 /* Shows */ = {
 			isa = PBXGroup;
 			children = (
+				A0A9460827776429003792D6 /* ViewController */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		A0A9460827776429003792D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				A0A946042777623A003792D6 /* ShowsViewController.swift */,
 				A0A946052777623A003792D6 /* ShowsViewController.xib */,
 			);
-			path = Shows;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0A9460927776563003792D6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9460A27776576003792D6 /* UIView+Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A0B709B127773D63006B119B = {
@@ -111,6 +129,7 @@
 			children = (
 				A0A945BD277740B1003792D6 /* Modules */,
 				A0B709BD27773D63006B119B /* AppDelegate.swift */,
+				A0A9460927776563003792D6 /* Helpers */,
 				A0B709C627773D65006B119B /* Assets.xcassets */,
 				A0B709C827773D65006B119B /* LaunchScreen.storyboard */,
 				A0B709CB27773D65006B119B /* Info.plist */,
@@ -218,6 +237,7 @@
 			files = (
 				A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */,
 				A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */,
+				A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */,
 				A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
