@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A0A945C1277740DB003792D6 /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A945BF277740DA003792D6 /* LaunchScreenViewController.xib */; };
 		A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A945C0277740DB003792D6 /* LaunchScreenViewController.swift */; };
+		A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A946042777623A003792D6 /* ShowsViewController.swift */; };
+		A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A946052777623A003792D6 /* ShowsViewController.xib */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 		7D03C0138372C13057693760 /* Pods-YackeenTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YackeenTask.release.xcconfig"; path = "Target Support Files/Pods-YackeenTask/Pods-YackeenTask.release.xcconfig"; sourceTree = "<group>"; };
 		A0A945BF277740DA003792D6 /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
 		A0A945C0277740DB003792D6 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		A0A946042777623A003792D6 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		A0A946052777623A003792D6 /* ShowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsViewController.xib; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A0A945BE277740DA003792D6 /* LaunchScreen */,
+				A0A9460327776214003792D6 /* Shows */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -72,6 +77,15 @@
 				A0A945BF277740DA003792D6 /* LaunchScreenViewController.xib */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		A0A9460327776214003792D6 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				A0A946042777623A003792D6 /* ShowsViewController.swift */,
+				A0A946052777623A003792D6 /* ShowsViewController.xib */,
+			);
+			path = Shows;
 			sourceTree = "<group>";
 		};
 		A0B709B127773D63006B119B = {
@@ -166,6 +180,7 @@
 				A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */,
 				A0B709C727773D65006B119B /* Assets.xcassets in Resources */,
 				A0A945C1277740DB003792D6 /* LaunchScreenViewController.xib in Resources */,
+				A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A946062777623A003792D6 /* ShowsViewController.swift in Sources */,
 				A0A945C2277740DB003792D6 /* LaunchScreenViewController.swift in Sources */,
 				A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */,
 			);
