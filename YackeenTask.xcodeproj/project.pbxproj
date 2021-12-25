@@ -26,6 +26,8 @@
 		A0A9463227778220003792D6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463127778220003792D6 /* Router.swift */; };
 		A0A94634277788E2003792D6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A94633277788E2003792D6 /* UIImage+Extension.swift */; };
 		A0A9463727778CA4003792D6 /* ShowsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463627778CA4003792D6 /* ShowsAPI.swift */; };
+		A0A9463B27779E80003792D6 /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9463927779E80003792D6 /* ShowDetailsViewController.swift */; };
+		A0A9463C27779E80003792D6 /* ShowDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A9463A27779E80003792D6 /* ShowDetailsViewController.xib */; };
 		A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B709BD27773D63006B119B /* AppDelegate.swift */; };
 		A0B709C727773D65006B119B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C627773D65006B119B /* Assets.xcassets */; };
 		A0B709CA27773D65006B119B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B709C827773D65006B119B /* LaunchScreen.storyboard */; };
@@ -53,6 +55,8 @@
 		A0A9463127778220003792D6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A0A94633277788E2003792D6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		A0A9463627778CA4003792D6 /* ShowsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsAPI.swift; sourceTree = "<group>"; };
+		A0A9463927779E80003792D6 /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		A0A9463A27779E80003792D6 /* ShowDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailsViewController.xib; sourceTree = "<group>"; };
 		A0B709BA27773D63006B119B /* YackeenTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YackeenTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B709BD27773D63006B119B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B709C627773D65006B119B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			children = (
 				A0A945BE277740DA003792D6 /* LaunchScreen */,
 				A0A9460327776214003792D6 /* Shows */,
+				A0A9463827779E67003792D6 /* ShowDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -226,6 +231,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A0A9463827779E67003792D6 /* ShowDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9463927779E80003792D6 /* ShowDetailsViewController.swift */,
+				A0A9463A27779E80003792D6 /* ShowDetailsViewController.xib */,
+			);
+			path = ShowDetails;
+			sourceTree = "<group>";
+		};
 		A0B709B127773D63006B119B = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +336,7 @@
 				A0B709C727773D65006B119B /* Assets.xcassets in Resources */,
 				A0A945C1277740DB003792D6 /* LaunchScreenViewController.xib in Resources */,
 				A0A946072777623A003792D6 /* ShowsViewController.xib in Resources */,
+				A0A9463C27779E80003792D6 /* ShowDetailsViewController.xib in Resources */,
 				A0A946102777660D003792D6 /* ShowsCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +389,7 @@
 				A0A9462727777541003792D6 /* ShadowViewimg.swift in Sources */,
 				A0A9461A27776F86003792D6 /* Route.swift in Sources */,
 				A0A9460B27776576003792D6 /* UIView+Extension.swift in Sources */,
+				A0A9463B27779E80003792D6 /* ShowDetailsViewController.swift in Sources */,
 				A0B709BE27773D63006B119B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
